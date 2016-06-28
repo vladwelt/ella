@@ -1,0 +1,171 @@
+\documentclass[letter,11pt,oneside,spanish]{article}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{anysize}
+
+\usepackage[
+pdfauthor={Vladimir Cespedes Lopez},%
+pdftitle={Ella},%
+colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+%urlcolor=black
+pdftex]{hyperref}
+
+\marginsize{2.5cm}{2.5cm}{2.5cm}{2.5cm}
+\renewcommand{\baselinestretch}{1.5}
+
+%opening
+\title{\textbf{Ella: Buscador de niños perdidos}}
+\author{Vladimir Cespedes Lopez\\
+Perfil de Proyecto\\
+Universidad Mayor de San Simón\\
+\{vladycespedes@gmail.com\\}
+\date{}
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\large{\textsc{\bf Universidad Mayor De San Simón}}\\
+\large{\textsc{\bf Facultad De Ciencias y Tecnología}}\\
+\vspace{4.0cm}
+\large{\bf Encontrar niños perdidos a través de \\
+una aplicación móvil, usando geolocalización}\\
+\vspace{1.0cm}
+\small{Vladimir Cespedes Lopez}
+~\\
+\small{\today}
+\end{center}
+\end{titlepage}
+
+\newpage
+\tableofcontents
+
+\newpage
+\section{Antecedentes}
+En los últimos años la perdida de niños va incrementando, de manera que las cifras de los 
+casos de perdida sin resolver se hacen cada vez mas, es un problema que todos ven pero 
+nadie ayuda a resolverlo.
+
+Los centros comerciales, playas y los parques públicos son los sitios que 
+concentran un mayor porcentaje de niños perdidos. Entre las madres que confiesan 
+haber perdido a sus niños alguna vez, un 58\% declara haberlos perdido a en el 
+centro comercial, un 16\% en la playa, un 15\% en un parque público y el 11\% 
+restante se reparte entre sitios como parques temáticos, aeropuertos, 
+espectáculos y conciertos, entre otros.
+
+En la mayoría de los casos, fue la propia madre quién encontró a sus niños 
+después de buscar enérgicamente a los pequeños y no fue necesaria la 
+intervención de los Cuerpos de Seguridad. Aun así, durante la búsqueda, 
+una de cada tres madres reconoce haber pedido ayuda a trabajadores locales 
+y otras personas de la zona del incidente.
+
+En la decada actual se tiene facil acceso a telefonos inteligentes y esto ira creciendo,
+ gracias a esto, todos podemos estar comunicados, a partir de aquello, nace la idea de 
+ ayudar a reducir el creciento de niños desaparecidos en ciertas condiciones.
+ 
+Si bien el mayor culpable de este crecimiento es el descuido de los padres, podemos 
+ayudar a reducir este, colaborando en la busqueda del niño, 
+
+Actualmente las formas de encontrar que existen son fotos de los niños pegados en 
+peajes, estaciones policiales, trancas, etc., también se ve tales fotos en el reverso de 
+algunas facturas de empresas (como Elfec). Pero ninguna de ellas nos ayuda de manera
+instantánea o de manera permanente.
+
+También aplicaciones de mensajería instantánea como Whatsapp, facebook messenger, telegram  entre otros,
+podrían ayudan actualmente a encontrar a los niños, enviando mensajes indicando datos
+como el lugar de la perdida a todos los contactos posibles.
+
+Debido a todo esto surgió la idea de realizar un proyecto que pueda ayudar a 
+encontrarlos a través de una aplicación que informe a sus usuarios de la 
+perdida tal que ellos puedan ayudar a encontrarlo y reportar del encuentro.
+
+\section{Análisis del problema}
+\subsection{Árbol del problema}
+Véase el cuadro \ref{arboldeproyecto} en la página \pageref{arboldeproyecto}
+
+\begin{figure}
+    \centering
+    \def\svgwidth{\columnwidth}
+    \input{image.pdf_tex}
+    \caption{Árbol de problemas}
+	\label{arboldeproyecto}
+\end{figure}
+
+\subsection{Formulación del Problema}
+Considerando los antecedentes mencionados anteriormente, se puede concluir que:
+
+\begin{itemize}
+\item Existen pocas opciones para el ayudar a encontrar niños perdidos.
+\item Todas las soluciones actuales son artesanales y no son centralizadas.
+\item El tiempo para encontrar a niños perdido es importante.
+\end{itemize}
+
+Por lo mencionado anteriormente se define el problema como:
+
+\emph{Búsqueda  sosegada de niños perdidos reduce la probabilidad de encontrarlos.}
+
+
+\section{Objetivo del proyecto}
+\subsection{Objetivo general}
+Acelerar la propagación de la búsqueda de niños perdidos mediante geolocalizacion 
+para minimizar el tiempo para encontrarlos.
+
+\subsection{Objetivos específicos}
+\begin{itemize}
+\item Agilizar la búsqueda del niño para minimizar el tiempo de desamparo.
+\item Facilitar el acceso a la comunidad para acelerar el inicio de la búsqueda.
+\item Mejorar los canales de comunicación entre la comunidad para facilitar la colaboración entre ellos.
+\item Centralizar los reportes de niños encontrados para acelerar el encuentro de los afectados.
+\end{itemize}
+
+\section{Área de conocimiento}
+\textbf{Área:} Ingeniería de Software
+\textbf{Subárea:} Programación Web
+
+\newpage
+
+\section{Justificación}
+Ya no sera necesario ir preguntando persona por persona, si alguien vio
+algún niño perdido, el sistema se encargara de hacer llegar tal pregunta a 
+todos los  usuarios que estén cerca del acontecimiento.
+
+Ademas de poder llegar a todos los usuarios cercanos al incidente, se podrá 
+ir propagando la información de la perdida en forma de anillo, tal que se pueda
+llegar a todos los usuarios de manera incremental.
+
+Esto es un paso para el avance tecnológico a nivel de comunidades.
+
+\section{Alcance}
+
+\section{Metodología}
+
+\section{Bibliografia}
+
+
+%\section{Planteamiento del Problema}
+%En caso de perdida de un niño o niña, generalmente la forma de búsqueda es personal,
+%esto quiere decir, ir preguntado persona por persona o en otros casos solo hacer una 
+%busqueda visual, para poder encontrar al niño perdido. Considerando que el niño peligra
+%mientras mas tiempo pase soló en lugares públicos, el tiempo juega un rol muy importante
+%a la hora de encontrarlo. Entonces se hace notoria la falta de un espacio común de 
+%ayuda que este orientado a niños perdidos.
+%
+%Ademas se ha notado que si bien las personas quieren ayudar, los canales de 
+%comunicación para hacerlo son difíciles, y escasos, lo cual conlleva a crear 
+%métodos creativos(tales como grupos en whatsapp, facebook u otras aplicaciones
+%de mensajería instantánea), pero no globales.
+
+\newpage
+
+
+\textbf{Univ. Vladimir Cespedes Lopez}\\
+\textbf{Nacionalidad:} boliviana\\
+\textbf{Correo electrónico:} vladycespedes@gmail.com\\
+Estudiante de la Carrera de Ingenieria de Sistemas (UMSS).\\
+\end{document}

@@ -1,0 +1,74 @@
+%% Creator: Inkscape inkscape 0.91, www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'image.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{574.10655923bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.96299309)%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{image.pdf}}%
+    \put(0.00535027,0.79512923){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.24442111\unitlength}\centering Suceptibilidad del niño perdido\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{image.pdf}}%
+    \put(0.23528539,0.94775929){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.21305499\unitlength}\centering Postegarción del inicio de la busqueda\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{image.pdf}}%
+    \put(0.52630881,0.94775928){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.24257602\unitlength}\centering Difusión lenta de la perdida a la comunidad \end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{image.pdf}}%
+    \put(0.7421375,0.77155762){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.25796678\unitlength}\raggedright Explotacion infantil\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{image.pdf}}%
+    \put(0.19240853,0.56167716){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.61429695\unitlength}\raggedright BUSQUEDA SOSEGADA DE NIÑOS PERDIDOS\\ REDUCE LA PROBABILIDAD DE ENCONTRARLOS\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{image.pdf}}%
+    \put(0.02642908,0.33608246){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.19426535\unitlength}\centering Reaccion lenta de la policia\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{image.pdf}}%
+    \put(0.17936137,0.21266087){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28185487\unitlength}\centering Reporte no inmediato de los padres\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{image.pdf}}%
+    \put(0.55142686,0.21956094){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.1882933\unitlength}\centering Indiferencia de la gente\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{image.pdf}}%
+    \put(0.68334947,0.33770038){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.31171495\unitlength}\centering Reporte descentralizado de niños encontrados\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{image.pdf}}%
+    \put(0.35210347,0.07755321){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\begin{minipage}{0.28185487\unitlength}\centering Medios de difusión poco adecuados\end{minipage}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{image.pdf}}%
+  \end{picture}%
+\endgroup%
