@@ -2,9 +2,14 @@
 
 \usepackage[utf8x]{inputenc}
 \usepackage[spanish]{babel}
+\addto{\captionsspanish}{%
+\renewcommand{\bibname}{Trasferencias}
+}
 \usepackage{graphicx}
 \usepackage{float}
 \usepackage{anysize}
+\usepackage{enumitem}
+\usepackage{titlesec}
 
 \usepackage[
 pdfauthor={Vladimir Cespedes Lopez},%
@@ -18,6 +23,9 @@ pdftex]{hyperref}
 
 \marginsize{2.5cm}{2.5cm}{2.5cm}{2.5cm}
 \renewcommand{\baselinestretch}{1.5}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\renewcommand\refname{asdfr}
 
 %opening
 \title{\textbf{Ella: Buscador de niños perdidos}}
@@ -57,7 +65,7 @@ concentran un mayor porcentaje de niños perdidos. Entre las madres que confiesa
 haber perdido a sus niños alguna vez, un 58\% declara haberlos perdido a en el 
 centro comercial, un 16\% en la playa, un 15\% en un parque público y el 11\% 
 restante se reparte entre sitios como parques temáticos, aeropuertos, 
-espectáculos y conciertos, entre otros.
+espectáculos y conciertos, entre otros \cite{Delphi1}.
 
 En la mayoría de los casos, fue la propia madre quién encontró a sus niños 
 después de buscar enérgicamente a los pequeños y no fue necesaria la 
@@ -65,12 +73,12 @@ intervención de los Cuerpos de Seguridad. Aun así, durante la búsqueda,
 una de cada tres madres reconoce haber pedido ayuda a trabajadores locales 
 y otras personas de la zona del incidente.
 
-En la decada actual se tiene facil acceso a telefonos inteligentes y esto ira creciendo,
+En la década actual se tiene fácil acceso a teléfonos inteligentes y esto ira creciendo,
  gracias a esto, todos podemos estar comunicados, a partir de aquello, nace la idea de 
- ayudar a reducir el creciento de niños desaparecidos en ciertas condiciones.
+ ayudar a reducir el crecimiento de niños desaparecidos en ciertas condiciones.
  
 Si bien el mayor culpable de este crecimiento es el descuido de los padres, podemos 
-ayudar a reducir este, colaborando en la busqueda del niño, 
+ayudar a reducir éste, colaborando en la búsqueda del niño, 
 
 Actualmente las formas de encontrar que existen son fotos de los niños pegados en 
 peajes, estaciones policiales, trancas, etc., también se ve tales fotos en el reverso de 
@@ -79,7 +87,7 @@ instantánea o de manera permanente.
 
 También aplicaciones de mensajería instantánea como Whatsapp, facebook messenger, telegram  entre otros,
 podrían ayudan actualmente a encontrar a los niños, enviando mensajes indicando datos
-como el lugar de la perdida a todos los contactos posibles.
+como el lugar de la pérdida a todos los contactos posibles.
 
 Debido a todo esto surgió la idea de realizar un proyecto que pueda ayudar a 
 encontrarlos a través de una aplicación que informe a sus usuarios de la 
@@ -97,41 +105,34 @@ Véase el cuadro \ref{arboldeproyecto} en la página \pageref{arboldeproyecto}
 	\label{arboldeproyecto}
 \end{figure}
 
-\subsection{Formulación del Problema}
-Considerando los antecedentes mencionados anteriormente, se puede concluir que:
+\subsection{Definición del Problema}
 
-\begin{itemize}
-\item Existen pocas opciones para el ayudar a encontrar niños perdidos.
-\item Todas las soluciones actuales son artesanales y no son centralizadas.
-\item El tiempo para encontrar a niños perdido es importante.
-\end{itemize}
-
-Por lo mencionado anteriormente se define el problema como:
-
-\emph{Búsqueda  sosegada de niños perdidos reduce la probabilidad de encontrarlos.}
+Búsqueda  sosegada de niños perdidos reduce la probabilidad de encontrarlos.
 
 
 \section{Objetivo del proyecto}
 \subsection{Objetivo general}
-Acelerar la propagación de la búsqueda de niños perdidos mediante geolocalizacion 
-para minimizar el tiempo para encontrarlos.
+
+Propagar el reporte de niños perdidos a usuarios cercanos al lugar de la perdida mediante una aplicación móvil 
+para localizar al niño de manera conjunta y rápida.
 
 \subsection{Objetivos específicos}
 \begin{itemize}
-\item Agilizar la búsqueda del niño para minimizar el tiempo de desamparo.
-\item Facilitar el acceso a la comunidad para acelerar el inicio de la búsqueda.
-\item Mejorar los canales de comunicación entre la comunidad para facilitar la colaboración entre ellos.
-\item Centralizar los reportes de niños encontrados para acelerar el encuentro de los afectados.
+\item Determinar la plataforma de desarrollo y uso de la aplicación.
+\item Diseñar la interfaz de usuario basada en la simplicidad que permita al usuario reportar la perdida de manera inmediata.
+\item Permitir crear cuentas a través de la aplicación móvil asociadas a redes sociales.
+\item Elaborar algoritmos para la propagación del reporte a los usuarios mas cercanos al incidente.
+\item Validar el comportamiento de algoritmos aplicados al sistema.
+\item Disponer de un servicio web de información geográfica \cite{Delphi2} para la ubicación de lugares.
 \end{itemize}
 
 \section{Área de conocimiento}
 \textbf{Área:} Ingeniería de Software
 \textbf{Subárea:} Programación Web
 
-\newpage
-
 \section{Justificación}
-Ya no sera necesario ir preguntando persona por persona, si alguien vio
+Este proyecto sobre la búsqueda de niños perdidos bajo los siguientes criterios. Se reporta a tiempo la perdida y se tiene instalada la aplicación.
+Aclarando estos criterios, podemos decir que, ya no sera necesario ir preguntando persona por persona, si alguien vio
 algún niño perdido, el sistema se encargara de hacer llegar tal pregunta a 
 todos los  usuarios que estén cerca del acontecimiento.
 
@@ -142,11 +143,115 @@ llegar a todos los usuarios de manera incremental.
 Esto es un paso para el avance tecnológico a nivel de comunidades.
 
 \section{Alcance}
+El desarrollo de este sistema considera toda la interacción entre distintas
+instancias del sistema, es decir, en lo que respecta a autentificación, consumo y provisión de recursos y control de privilegios. Es necesario mencionar
+también que escapan de las funciones de este sistema la interacción entre el
+sistema desarrollado y otras redes sociales(a excepción de Facebook, que por este se hará el registro), sea para provisión o consumo de
+recursos.
 
 \section{Metodología}
+Para el desarrollo del proyecto se hará uso de la metodología SCRUM, las fases y actividades a realizar son:
+
+\begin{table}
+\centering
+\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|c|c|c|}
+	\hline
+	\multicolumn{6}{|c|}{Metodología del proyecto} \\ \hline
+	Objetivo 	& Actividad 						& 	Resultado  	& Tiempo 	   & Fecha & Fecha   \\
+	 				&										& 	esperado		& estimado  & Inicio 	& Fin   \\ \hline
+	 Determinar la arquitectura e historias de usuario. & \begin{itemize}[leftmargin=*]
+	 																					\item Generar Historias de usuario, priorizadas y estimadas.
+																					 	\item Reparto de historias de usuario por iteración.
+																					 	\item Estudio de la arquitectura.
+																					\end{itemize}  	& \begin{itemize}[leftmargin=*]
+	 																					\item Historias de usuario ordenadas.
+																					 	\item Cantidad de historias de usuario determinada.
+																					 	\item Arquitectura definida.
+																					\end{itemize}  	& 10 días & 04-07-16 & 15-07-16										\\ 
+	\hline %Fin del Product Backlog
+	Facilitar el reporte inmediato de niños perdidos para minimizar el tiempo de desamparo. & \begin{itemize}[leftmargin=*]
+	 																					\item Planificar Sprints(Sprint Planning).
+																					 	\item Desarrollo de tareas.
+																					 	\item Validar Sprints concluidos(Sprint Review).
+																					\end{itemize}  	& \begin{itemize}[leftmargin=*]
+	 																					\item Sprint Planificado.
+																					 	\item Tareas terminadas.
+																					 	\item Sprint Retrospective.
+																					\end{itemize}  	& 10 días & 04-07-16 & 15-07-16										\\ 
+	\hline %Fin del Primer Sprint
+\end{tabular}
+\end{table}
+\begin{table}
+\centering
+\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|c|c|c|}
+	\hline
+	Agilizar la propagación del reporte a la comunidad para acelerar el inicio de la búsqueda en conjunto. & \begin{itemize}[leftmargin=*]
+	 																					\item Planificar Sprints(Sprint Planning).
+																					 	\item Desarrollo de tareas.
+																					 	\item Validar Sprints concluidos(Sprint Review).
+																					\end{itemize}  	& \begin{itemize}[leftmargin=*]
+	 																					\item Sprint Planificado.
+																					 	\item Tareas terminadas.
+																					 	\item Sprint Retrospective.
+																					\end{itemize}  	& 10 días & 04-07-16 & 15-07-16										\\ 
+	\hline %Fin del Primer Sprint	
+	Agilizar los procesos de publicación, y discriminación a colaboradores para llegar a los mas cercanos. & \begin{itemize}[leftmargin=*]
+	 																					\item Planificar Sprints(Sprint Planning).
+																					 	\item Desarrollo de tareas.
+																					 	\item Validar Sprints concluidos(Sprint Review).
+																					\end{itemize}  	& \begin{itemize}[leftmargin=*]
+	 																					\item Sprint Planificado.
+																					 	\item Tareas terminadas.
+																					 	\item Sprint Retrospective.
+																					\end{itemize}  	& 10 días & 04-07-16 & 15-07-16										\\ 
+	\hline %Fin del Primer Sprint	
+\end{tabular}
+\end{table}
+\begin{table}
+\centering
+\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{3.5cm}|c|c|c|}
+	\hline
+	Centralizar los reportes de niños encontrados para acelerar el encuentro de los afectados. & \begin{itemize}[leftmargin=*]
+	 																					\item Planificar Sprints(Sprint Planning).
+																					 	\item Desarrollo de tareas.
+																					 	\item Validar Sprints concluidos(Sprint Review).
+																					\end{itemize}  	& \begin{itemize}[leftmargin=*]
+	 																					\item Sprint Planificado.
+																					 	\item Tareas terminadas.
+																					 	\item Sprint Retrospective.
+																					\end{itemize}  	& 10 días & 04-07-16 & 15-07-16										\\ 
+	\hline %Fin del Primer Sprint	
+	Puesta en marcha y pruebas de carga & \begin{itemize}[leftmargin=*]
+	 																					\item Despliegue de el sistema.
+																					 	\item Pruebas de carga.
+																					 	\item Generación de "scripts" de recuperación de sistema.
+																					\end{itemize}  	& \begin{itemize}[leftmargin=*]
+	 																					\item Sistema en producción.
+																					 	\item Balanceo de Carga.
+																					 	\item Pruebas de "scripts" generados.
+																					\end{itemize}  	& 10 días & 04-07-16 & 15-07-16										\\ 
+	\hline %Fin del Primer Sprint
+\end{tabular}
+\end{table}
+
+\newpage
 
 \section{Bibliografia}
 
+\begingroup
+\titleformat*{\section}{\normalfont}
+\begin{thebibliography}{depth}
+
+\bibitem{Delphi1} Los lugares donde es más frecuente perder a tu hijo.\\
+Extraído el 28 de Mayo del 2016, de\\
+http://www.abc.es/familia-padres-hijos/20150619/abci-perder-201506181233.html
+
+\bibitem{Delphi2} Sistema de información geográfica.\\
+Extraído el 04 de Junio del 2016, de\\
+https://es.wikipedia.org/wiki/Sistema\_de\_información\_geográfica
+
+\end{thebibliography}
+\endgroup
 
 %\section{Planteamiento del Problema}
 %En caso de perdida de un niño o niña, generalmente la forma de búsqueda es personal,
@@ -161,11 +266,4 @@ Esto es un paso para el avance tecnológico a nivel de comunidades.
 %métodos creativos(tales como grupos en whatsapp, facebook u otras aplicaciones
 %de mensajería instantánea), pero no globales.
 
-\newpage
-
-
-\textbf{Univ. Vladimir Cespedes Lopez}\\
-\textbf{Nacionalidad:} boliviana\\
-\textbf{Correo electrónico:} vladycespedes@gmail.com\\
-Estudiante de la Carrera de Ingenieria de Sistemas (UMSS).\\
 \end{document}
